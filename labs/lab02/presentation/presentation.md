@@ -4,7 +4,7 @@ lang: ru-RU
 title: Презентация по лабораторной работе №2
 subtitle: Архитектура компьютеров и Операционные Системы
 author:
-  - Маркеш Виейра Нанке Грасимилде.
+  - Маркеш В.Н.Грасимилде.
 institute:
   - Российский университет дружбы народов, Москва, Россия
 date: 26 февраля 2026
@@ -21,10 +21,7 @@ aspectratio: 169
 section-titles: true
 theme: metropolis
 header-includes:
- # - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
- # - '\makeatletter'
- # - '\beamer@ignorenonframefalse'
-#  - '\makeatother'
+ - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
 ---
 
 # Цель работы
@@ -158,4 +155,5 @@ Cкопирую сгенерированный gpg ключ в буфер обм
 # Выводы
 
 При выполнении лабораторной работы я изучила идеалогию, применение средств контроля версий и освоеила умение по работе с git.
+
 
