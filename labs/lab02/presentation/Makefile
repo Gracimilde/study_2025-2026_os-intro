@@ -26,3 +26,7 @@ clean:
 	-@rm $(FILES) *~
 
 cleanall: clean
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 8c4529c878365ee0347dbe674f1871d1bcd6e1eb
