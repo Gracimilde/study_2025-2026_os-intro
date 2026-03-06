@@ -4,7 +4,7 @@ FILES += $(patsubst %.md,%.html,$(wildcard *.md))
 
 FILTERS =
 PDF_ENGINE = 
-PDF_OPTIONS = 
+PDF_OPTIONS = --number-sections -V mainfont="DejaVu Sans" -V monofont="DejaVu Sans Mono"
 PDF_FORMAT_OPTIONS = -t beamer --slide-level=2
 
 FILTERS += --citeproc
@@ -18,7 +18,7 @@ REVEALJS_THEME = beige
 	-@pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(PDF_FORMAT_OPTIONS) -o "$@"
 
 %.html: %.md
-	pandoc  "$<" --embed-resources --standalone -t revealjs -V theme=$(REVEALJS_THEME) -o "$@"
+	-@pandoc  "$<" --embed-resources --standalone -t revealjs -V theme=$(REVEALJS_THEME) -o "$@"
 
 all: $(FILES)
 
@@ -26,7 +26,4 @@ clean:
 	-@rm $(FILES) *~
 
 cleanall: clean
-<<<<<<< HEAD
-=======
-	
->>>>>>> 8c4529c878365ee0347dbe674f1871d1bcd6e1eb
+
