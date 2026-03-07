@@ -1,7 +1,7 @@
 
---
+---
 ## Front matter
-title: "Отчёт по лабораторной работе №3"
+title: "Отчет по лабораторной работе №3"
 subtitle: "Язык разметки Markdown"
 author: "Маркеш Виейра Нанке Грасимилде"
 
@@ -11,7 +11,7 @@ toc-title: "Содержание"
 
 ## Bibliography
 bibliography: bib/cite.bib
-# csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 
 ## Pdf output format
 toc: true # Table of contents
@@ -33,14 +33,16 @@ polyglossia-otherlangs:
 babel-lang: russian
 babel-otherlangs: english
 ## Fonts
-mainfont: Liberation Serif
-romanfont: Liberation Serif
-sansfont: Liberation Sans
-monofont: Liberation Mono
-mainfontoptions: Ligatures=TeX
-romanfontoptions: Ligatures=TeX
-sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
-monofontoptions: Scale=MatchLowercase,Scale=0.9
+mainfont: IBM Plex Serif
+romanfont: IBM Plex Serif
+sansfont: IBM Plex Sans
+monofont: IBM Plex Mono
+mathfont: STIX Two Math
+mainfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
+romanfontoptions: Ligatures=Common,Ligatures=TeX,Scale=0.94
+sansfontoptions: Ligatures=Common,Ligatures=TeX,Scale=MatchLowercase,Scale=0.94
+monofontoptions: Scale=MatchLowercase,Scale=0.94,FakeStretch=0.9
+mathfontoptions:
 ## Biblatex
 biblatex: true
 biblio-style: "gost-numeric"
@@ -53,6 +55,7 @@ biblatexoptions:
   - citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
+tableTitle: "Таблица"
 listingTitle: "Листинг"
 lofTitle: "Список иллюстраций"
 lolTitle: "Листинги"
