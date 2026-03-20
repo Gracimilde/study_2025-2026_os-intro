@@ -23,6 +23,6 @@ REVEALJS_THEME = beige
 all: $(FILES)
 
 clean:
-	-@rm $(FILES) *~
+	-@rm $(FILES) "*~"
 
 cleanall: clean
